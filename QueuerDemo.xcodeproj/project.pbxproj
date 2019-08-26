@@ -14,6 +14,7 @@
 		5A88A47F23142938003F115D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88A47D23142938003F115D /* LaunchScreen.storyboard */; };
 		5A88A48A23142938003F115D /* QueuerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88A48923142938003F115D /* QueuerDemoTests.swift */; };
 		5A88A49523142938003F115D /* QueuerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88A49423142938003F115D /* QueuerDemoUITests.swift */; };
+		5A88A4AA23143512003F115D /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88A4A923143512003F115D /* Components.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5A88A49023142938003F115D /* QueuerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueuerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A88A49423142938003F115D /* QueuerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuerDemoUITests.swift; sourceTree = "<group>"; };
 		5A88A49623142938003F115D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A88A4A923143512003F115D /* Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		5A88A47323142937003F115D /* QueuerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5A88A4A223143437003F115D /* UI */,
 				5A88A47423142937003F115D /* AppDelegate.swift */,
 				5A88A47623142937003F115D /* ViewController.swift */,
 				5A88A47823142937003F115D /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				5A88A49623142938003F115D /* Info.plist */,
 			);
 			path = QueuerDemoUITests;
+			sourceTree = "<group>";
+		};
+		5A88A4A223143437003F115D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5A88A4A923143512003F115D /* Components.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A88A47723142937003F115D /* ViewController.swift in Sources */,
+				5A88A4AA23143512003F115D /* Components.swift in Sources */,
 				5A88A47523142937003F115D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,67 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QueuerDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Queuer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfo-3v-jgt">
+                                <rect key="frame" x="60.333333333333329" y="162" width="254.66666666666669" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J3b-y4-huw">
+                                <rect key="frame" x="41" y="396" width="292" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWG-Pl-ifM">
+                                <rect key="frame" x="41.666666666666657" y="444" width="292" height="30"/>
+                                <nil key="textColor"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vB3-If-1IC">
+                                <rect key="frame" x="216" y="497" width="78" height="30"/>
+                                <state key="normal" title="Login"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vW9-6C-eVh">
+                                <rect key="frame" x="69" y="497" width="98" height="30"/>
+                                <state key="normal" title="Sign Up"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vW9-6C-eVh" firstAttribute="top" secondItem="WWG-Pl-ifM" secondAttribute="bottom" constant="23" id="3V2-Rc-hfK"/>
+                            <constraint firstItem="WWG-Pl-ifM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7VK-5W-qMm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vB3-If-1IC" secondAttribute="trailing" constant="81" id="Aoy-9z-wPs"/>
+                            <constraint firstItem="Gfo-3v-jgt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="C6q-Z1-UuV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vW9-6C-eVh" secondAttribute="trailing" constant="208" id="FSF-t3-iau"/>
+                            <constraint firstItem="vB3-If-1IC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="216" id="IbX-8r-GIi"/>
+                            <constraint firstItem="J3b-y4-huw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P90-vX-5w4"/>
+                            <constraint firstItem="WWG-Pl-ifM" firstAttribute="top" secondItem="J3b-y4-huw" secondAttribute="bottom" constant="18" id="fV4-9u-sH6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J3b-y4-huw" secondAttribute="trailing" constant="42" id="ftN-56-ZWC"/>
+                            <constraint firstItem="vB3-If-1IC" firstAttribute="top" secondItem="WWG-Pl-ifM" secondAttribute="bottom" constant="23" id="iDN-Me-7il"/>
+                            <constraint firstItem="J3b-y4-huw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="q7a-4c-Pve"/>
+                            <constraint firstItem="J3b-y4-huw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="qHt-oX-rCI"/>
+                            <constraint firstItem="vW9-6C-eVh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="tQU-MU-40g"/>
+                            <constraint firstItem="Gfo-3v-jgt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uCm-rc-r4f"/>
+                            <constraint firstItem="WWG-Pl-ifM" firstAttribute="width" secondItem="J3b-y4-huw" secondAttribute="width" id="wxC-WI-H1q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="vB3-If-1IC" id="qRT-XI-FkD"/>
+                        <outlet property="passwordTextField" destination="WWG-Pl-ifM" id="yjX-76-OlY"/>
+                        <outlet property="signupButton" destination="vW9-6C-eVh" id="NLK-BB-ZcS"/>
+                        <outlet property="usernameTextField" destination="J3b-y4-huw" id="r5w-zQ-8gY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="137.4384236453202"/>
         </scene>
     </scenes>
 </document>
